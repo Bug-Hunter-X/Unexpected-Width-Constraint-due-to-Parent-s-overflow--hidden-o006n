@@ -1,0 +1,23 @@
+To fix this, avoid using `overflow: hidden` on the parent element if it's not strictly needed. Alternatively, consider using a different approach, such as setting the width of the parent element to a specific value or using a flexible box layout to manage the width of its children.  The following CSS shows one possible solution:
+
+```css
+.parent {
+  width: 100%; /* Or a specific width */
+}
+
+.container {
+  width: 100%;
+}
+```
+
+Another approach involves using flexbox for the parent:
+
+```css
+.parent {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+}
+```
