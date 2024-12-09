@@ -1,0 +1,7 @@
+The following CSS rule attempts to style elements with the class `container`:
+
+```css
+.container {width: 100%;}
+```
+
+However, the intended behavior is not working because a parent element has the `overflow: hidden;` property set, causing the `container` element's width to be constrained.
